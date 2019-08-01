@@ -1,0 +1,610 @@
+{
+    "chat":[
+        {
+            "id":1,
+            "corporation":"J P Morgan",
+            "geography":"",
+            "platform":"Kasisto",
+            "usecase":"AI",
+            "source":"https://www.cnbc.com/2018/06/25/dont-be-afraid-of-ai-helping-to-manage-your-money.html"
+        },
+        {
+            "id":2,
+            "corporation":"Bank Of America",
+            "geography":"",
+            "platform":"Unknown",
+            "usecase":"Chatbot(Erica)",
+            "source":""
+        },
+        {
+            "id":3,
+            "corporation":"KLM Royal Dutch Airlines (BlueBot)",
+            "geography":"",
+            "platform":"Google Dialogflow Facebook Messenger",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":4,
+            "corporation":"KLM Royal Dutch Airlines",
+            "geography":"Yemen",
+            "platform":"Digital Genius",
+            "usecase":"",
+            "source":"https://venturebeat.com/2018/08/21/how-autodesk-and-digitalgenius-are-evolving-ai-customer-service-beyond-chatbots/"
+        },
+        {
+            "id":5,
+            "corporation":"Lufthansa (Mildred)",
+            "geography":"Singapore",
+            "platform":"Wit.ai",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":6,
+            "corporation":"AllState Insurance",
+            "geography":"Congo",
+            "platform":"IPsoft",
+            "usecase":"",
+            "source":"https://www.insurancebusinessmag.com/us/news/technology/allstate-turns-to-technology-again-101489.aspx"
+        },
+        {
+            "id":7,
+            "corporation":"HSBC",
+            "geography":"",
+            "platform":"Maritz Motivation Solutions",
+            "usecase":"Personalization of rewards program",
+            "source":"https://www.psfk.com/2018/05/virtual-assistance-financial-services.html"
+        },
+        {
+            "id":8,
+            "corporation":"HSBC",
+            "geography":"Worldwide (14 countries)",
+            "platform":"LivePerson",
+            "usecase":"Conversational Banking",
+            "source":"https://www.prnewswire.com/news-releases/liveperson-and-hsbc-bring-conversational-commerce-to-banking-300646076.html"
+        },
+        {
+            "id":9,
+            "corporation":"Widiba",
+            "geography":"US",
+            "platform":"Cleo",
+            "usecase":"Insights into spending across bank accounts & credit cards, send money to Facebook Messenger contacts, donate, plan finances, get recommendations",
+            "source":"https://www.psfk.com/2018/05/virtual-assistance-financial-services.html"
+        },
+        {
+            "id":10,
+            "corporation":"RakBank",
+            "geography":"UAE",
+            "platform":"IBM Watson",
+            "usecase":"Chatbot",
+            "source":"http://tradearabia.com/news/BANK_340653.html"
+        },
+        {
+            "id":11,
+            "corporation":"ANZ",
+            "geography":"",
+            "platform":"Amazon Lex",
+            "usecase":"Chatbot (Polli)",
+            "source":"https://www.itnews.com.au/news/anz-builds-chatbot-on-amazon-polly-492141"
+        },
+        {
+            "id":12,
+            "corporation":"Miracle Mile Shops",
+            "geography":"US",
+            "platform":"",
+            "usecase":"Conversational Banking",
+            "source":"https://www.prnewswire.com/news-releases/liveperson-and-hsbc-bring-conversational-commerce-to-banking-300646076.html"
+        },
+        {
+            "id":13,
+            "corporation":"HSBC",
+            "geography":"",
+            "platform":"LivePerson",
+            "usecase":"Satisfi Labs",
+            "source":"https://www.prnewswire.com/news-releases/miracle-mile-shops--satisfi-labs-inc-introduce-interactive-ai-personality-to-enhance-customer-service-300657930.html"
+        },
+        {
+            "id":14,
+            "corporation":"Celcom Axiata",
+            "geography":"",
+            "platform":"Microsoft Malaysia",
+            "usecase":"Virtual agents (Emma and Clive)",
+            "source":"https://www.digitalnewsasia.com/business/celcom-partners-microsoft-enhance-customer-service"
+        },
+        {
+            "id":15,
+            "corporation":"Protective Life",
+            "geography":"",
+            "platform":"SaleMove",
+            "usecase":"VA",
+            "source":"Internal sources"
+        },
+        {
+            "id":16,
+            "corporation":"TD Bank",
+            "geography":"",
+            "platform":"Kasisto",
+            "usecase":"Chatbot",
+            "source":"https://www.bankrate.com/banking/bank-of-america-erica-chatbot/"
+        },
+        {
+            "id":17,
+            "corporation":"DBS Bank",
+            "geography":"",
+            "platform":"Kasisto",
+            "usecase":"VA for Digibank",
+            "source":"http://www.prnewswire.co.in/news-releases/dbs-bank-and-kasisto-named-best-digital-bank-by-celent-680803241.html"
+        },
+        {
+            "id":18,
+            "corporation":"TGI Fridays",
+            "geography":"",
+            "platform":"Conversable",
+            "usecase":"Conversational",
+            "source":""
+        },
+        {
+            "id":19,
+            "corporation":"Nationwide Financial Services",
+            "geography":"US",
+            "platform":"Flamingo AI",
+            "usecase":"VA (Monthly Recurring Revenue Model)",
+            "source":"https://www.theaustralian.com.au/news/latest-news/flamingo-ai-updates-client-progress/news-story/8488af851c095940b9a8014d8f0929cd?nk=13ddcbddcd222e3dc315164c48ae9327-1540459623"
+        },
+        {
+            "id":20,
+            "corporation":"NIB Health Services",
+            "geography":"Australia",
+            "platform":"Amazon Lex",
+            "usecase":"Nibby (chatbot)",
+            "source":"https://www.cio.com.au/article/631073/nibby-chatbot-launched-assist-nib-health-fund-customers/"
+        },
+        {
+            "id":21,
+            "corporation":"UBank",
+            "geography":"Australia",
+            "platform":"IBM Watson, LivePerson",
+            "usecase":"Robochat (chatbot for home loan applications)",
+            "source":"https://www.computerworld.com.au/article/626828/nab-launches-chatbot-help-business-customers/"
+        },
+        {
+            "id":22,
+            "corporation":"Commonwealth Bank of Australia",
+            "geography":"Australia",
+            "platform":"Nuance",
+            "usecase":"Ceba (virtual banking assistant)",
+            "source":"https://www.computerworld.com.au/article/632372/cba-launches-virtual-banking-assistant/"
+        },
+        {
+            "id":23,
+            "corporation":"Nordea",
+            "geography":"Finland",
+            "platform":"FeelingStream",
+            "usecase":"Routing of customer messages",
+            "source":"http://docs.media.bitpipe.com/io_10x/io_102267/item_1306461/AI_Beyond_The_Hype.pdf"
+        },
+        {
+            "id":24,
+            "corporation":"Bradesco",
+            "geography":"Brazil",
+            "platform":"IBM Watson",
+            "usecase":"Banking VA",
+            "source":"https://www.fastcompany.com/90201373/ibm-says-data-and-utility-are-the-keys-to-brand-success-in-voice"
+        },
+        {
+            "id":25,
+            "corporation":"Munich Airport",
+            "geography":"Germany",
+            "platform":"IBM Watson",
+            "usecase":"Humanoid Robot called Josie Pepper",
+            "source":"https://www.fastcompany.com/90201373/ibm-says-data-and-utility-are-the-keys-to-brand-success-in-voice"
+        },
+        {
+            "id":26,
+            "corporation":"Liberty Mutual",
+            "geography":"US",
+            "platform":"Flamingo AI",
+            "usecase":"Cognitive VA",
+            "source":"http://www.proactiveinvestors.com.au/companies/news/192395/flamingo-ais-virtual-assistant-goes-live-with-liberty-mutual-192395.html"
+        },
+        {
+            "id":27,
+            "corporation":"Vodafone",
+            "geography":"Germany",
+            "platform":"IBM Watson",
+            "usecase":"FAQ chatbot Tobi",
+            "source":"https://www.telecompaper.com/news/vodafone-launches-ai-chatbot-tobi-in-germany--1253252"
+        },
+        {
+            "id":28,
+            "corporation":"BBVA",
+            "geography":"",
+            "platform":"IPsoft",
+            "usecase":"",
+            "source":"https://www.computerweekly.com/feature/IPsofts-digital-worker-is-part-of-a-shift-in-human-productivity"
+        },
+        {
+            "id":29,
+            "corporation":"AIG",
+            "geography":"",
+            "platform":"IPsoft",
+            "usecase":"",
+            "source":"https://www.computerweekly.com/feature/IPsofts-digital-worker-is-part-of-a-shift-in-human-productivity"
+        },
+        {
+            "id":30,
+            "corporation":"Vodafone",
+            "geography":"7 countries, 3 languages",
+            "platform":"IPsoft",
+            "usecase":"IT services desk, 58% of contact to its IT services desk goes through Amelia.",
+            "source":"https://www.computerweekly.com/feature/IPsofts-digital-worker-is-part-of-a-shift-in-human-productivity"
+        },
+        {
+            "id":31,
+            "corporation":"Allianz",
+            "geography":"",
+            "platform":"Inbenta",
+            "usecase":"Chatbot, FAQs",
+            "source":"https://searchcrm.techtarget.com/feature/AI-chatbots-gaining-as-a-customer-service-channel"
+        },
+        {
+            "id":32,
+            "corporation":"Axis Bank",
+            "geography":"India",
+            "platform":"Active.ai",
+            "usecase":"Conversational banking assistant Axis Aha!",
+            "source":"https://markets.businessinsider.com/news/stocks/axis-bank-s-axis-aha-conversational-ai-powered-by-active-ai-wins-the-dx-leader-award-at-2018-idc-digital-transformation-awards-1027462577"
+        },
+        {
+            "id":33,
+            "corporation":"Westjet",
+            "geography":"Canada",
+            "platform":"Msg.ai, Facebook Messenger",
+            "usecase":"Chatbot (Juliet)",
+            "source":"http://asia.etbtravelnews.global/366894/westjet-becomes-first-canadian-airline-to-launch-an-ai-chatbot/"
+        },
+        {
+            "id":34,
+            "corporation":"T-Mobile",
+            "geography":"",
+            "platform":"LivePerson",
+            "usecase":"",
+            "source":"https://pr.liveperson.com/index.php?s=43&item=538"
+        },
+        {
+            "id":35,
+            "corporation":"Accor Hotels",
+            "geography":"Australia",
+            "platform":"Facebook Messenger, In-house",
+            "usecase":"Chatbot",
+            "source":"https://www.thehotelconversation.com.au/news/2018/09/03/accorhotels-australia-launches-facebook-chatbot-accorbot/1535929030"
+        },
+        {
+            "id":36,
+            "corporation":"Heineken",
+            "geography":"New Zealand",
+            "platform":"Oracle AI",
+            "usecase":"Chatbot for upcoming Heineken Urban Polo evebts",
+            "source":"https://www.computerweekly.com/news/252447644/Heineken-and-Oracle-create-chatbot-helper-for-polo-events"
+        },
+        {
+            "id":37,
+            "corporation":"Super Retail Group",
+            "geography":"Australia",
+            "platform":"OutThought",
+            "usecase":"Internal employee communications",
+            "source":"https://www.insideretail.com.au/news/super-retail-group-pilots-internal-ai-assistant-201808"
+        },
+        {
+            "id":38,
+            "corporation":"BMW",
+            "geography":"",
+            "platform":"DigitalGenius",
+            "usecase":"",
+            "source":"https://venturebeat.com/2018/08/21/how-autodesk-and-digitalgenius-are-evolving-ai-customer-service-beyond-chatbots/"
+        }
+    ],
+    "speech":[
+        {
+            "id":1,
+            "corporation":"Kotak Mahindra Bank",
+            "geography":"India",
+            "platform":"Nuance",
+            "usecase":"NLU, Call Steering for Voice Assistant",
+            "source":"https://www.globalbankingandfinance.com/kotak-mahindra-banks-taps-nuance-to-launch-its-ai-powered-virtual-voice-assistant-keya/"
+        },
+        {
+            "id":2,
+            "corporation":"Domino's",
+            "geography":"Australia",
+            "platform":"Nuance",
+            "usecase":"DRU Assist (voice assistant)",
+            "source":"https://www.cio.com.au/article/615112/domino-serves-up-voice-assistant-automation-franchisees/"
+        },
+        {
+            "id":3,
+            "corporation":"Marks & Spencer",
+            "geography":"US",
+            "platform":"Twilio",
+            "usecase":"Uses integration with Google Cloud Contact Centre AI to transcribe incoming calls & determine intent",
+            "source":"https://www.information-age.com/marks-and-spencer-ai-123474240/"
+        },
+        {
+            "id":4,
+            "corporation":"Barclays",
+            "geography":"",
+            "platform":"Clinic AI",
+            "usecase":"Conversational Voice AI",
+            "source":"https://techcrunch.com/2018/09/05/clinc-expands-to-automotive-releases-saas-platform-for-its-voice-ai-assistant/"
+        },
+        {
+            "id":5,
+            "corporation":"USAA",
+            "geography":"",
+            "platform":"Clinic AI",
+            "usecase":"",
+            "source":"https://techcrunch.com/2018/09/05/clinc-expands-to-automotive-releases-saas-platform-for-its-voice-ai-assistant/"
+        },
+        {
+            "id":6,
+            "corporation":"S&P Global",
+            "geography":"",
+            "platform":"Clinic AI",
+            "usecase":"",
+            "source":"https://techcrunch.com/2018/09/05/clinc-expands-to-automotive-releases-saas-platform-for-its-voice-ai-assistant/"
+        }
+    ],
+    "messaging":[
+        {
+            "id":1,
+            "corporation":"Bankwest",
+            "geography":"Australia",
+            "platform":"LivePerson",
+            "messaging-channels":"In-app",
+            "usecase":"In-app messaging, omnichannel chat",
+            "source":"https://www.cmo.com.au/article/644861/bankwest-touts-customer-satisfaction-rise-new-in-app-messaging-service/"
+        },
+        {
+            "id":2,
+            "corporation":"Overstock",
+            "geography":"",
+            "platform":"Quiq",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://www.forbes.com/sites/micahsolomon/2018/07/13/messaging-and-the-customer-experience-how-bozeman-startup-quiq-helps-office-depot-overstock-com/#5c8870c7a3c9"
+        },
+        {
+            "id":3,
+            "corporation":"Pier 1",
+            "geography":"",
+            "platform":"Quiq",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://www.forbes.com/sites/micahsolomon/2018/07/13/messaging-and-the-customer-experience-how-bozeman-startup-quiq-helps-office-depot-overstock-com"
+        },
+        {
+            "id":4,
+            "corporation":"Men's Wearhouse, Joseph A. Bank",
+            "geography":"",
+            "platform":"Quiq",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://www.forbes.com/sites/micahsolomon/2018/07/13/messaging-and-the-customer-experience-how-bozeman-startup-quiq-helps-office-depot-overstock-com/"
+        },
+        {
+            "id":5,
+            "corporation":"Office Depot",
+            "geography":"",
+            "platform":"Quiq",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://www.forbes.com/sites/micahsolomon/2018/07/13/messaging-and-the-customer-experience-how-bozeman-startup-quiq-helps-office-depot-overstock-com"
+        },
+        {
+            "id":6,
+            "corporation":"Insikt",
+            "geography":"",
+            "platform":"Quiq",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://www.forbes.com/sites/micahsolomon/2018/07/13/messaging-and-the-customer-experience-how-bozeman-startup-quiq-helps-office-depot-overstock-com/#34a9d2e4a3c9"
+        },
+        {
+            "id":7,
+            "corporation":"Brink's Home Security",
+            "geography":"",
+            "platform":"Quiq",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://www.forbes.com/sites/micahsolomon/2018/07/13/messaging-and-the-customer-experience-how-bozeman-startup-quiq-helps-office-depot-overstock-com/#34a9d2e4a3c9"
+        },
+        {
+            "id":8,
+            "corporation":"Tile",
+            "geography":"",
+            "platform":"Quiq",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://www.forbes.com/sites/micahsolomon/2018/07/13/messaging-and-the-customer-experience-how-bozeman-startup-quiq-helps-office-depot-overstock-com/#34a9d2e4a3c9"
+        },
+        {
+            "id":9,
+            "corporation":"Aramark",
+            "geography":"USA",
+            "platform":"Assist (for BOT), LIVEPERSON (for Chat)",
+            "messaging-channels":"ABC",
+            "usecase":"fans in designated sections of Citizens Bank Park will be able to use Apple Business Chat to place orders using their iPhone’s Messages app to have the menu items delivered directly to their seats, as part of a ground-breaking pilot program.",
+            "source":""
+        },
+        {
+            "id":10,
+            "corporation":"Discover",
+            "geography":"",
+            "platform":"LIVEPERSON",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":11,
+            "corporation":"Four Seasons",
+            "geography":"",
+            "platform":"",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":12,
+            "corporation":"Harry & David",
+            "geography":"",
+            "platform":"",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":13,
+            "corporation":"Hilton",
+            "geography":"",
+            "platform":"",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":14,
+            "corporation":"The Home Depot",
+            "geography":"",
+            "platform":"LIVEPERSON",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":15,
+            "corporation":"Lowe's",
+            "geography":"",
+            "platform":"LIVEPERSON",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":16,
+            "corporation":"Marriot",
+            "geography":"",
+            "platform":"Salesforce",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":17,
+            "corporation":"NewEgg",
+            "geography":"",
+            "platform":"",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":18,
+            "corporation":"T-Mobile",
+            "geography":"",
+            "platform":"LIVEPERSON",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":19,
+            "corporation":"TD Ameritrade",
+            "geography":"",
+            "platform":"",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":20,
+            "corporation":"Wells Fargo",
+            "geography":"",
+            "platform":"",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":21,
+            "corporation":"1-800-Flowers",
+            "geography":"",
+            "platform":"",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":22,
+            "corporation":"KLM",
+            "geography":"",
+            "platform":"Facebook Messenger",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://www.computerweekly.com/news/252447316/Language-barrier-wont-hold-back-chatbots-in-the-Netherlands"
+        },
+        {
+            "id":23,
+            "corporation":"T-Mobile",
+            "geography":"",
+            "platform":"LIVEPERSON",
+            "messaging-channels":"",
+            "usecase":"",
+            "source":"https://pr.liveperson.com/index.php?s=43&item=538"
+        }
+    ],
+    "chatPlatform":[
+        {
+            "id":1,
+            "corporation":"Target",
+            "geography":"USA",
+            "platform":"Salesforce",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":2,
+            "corporation":"Commonwealth Bank of Australia",
+            "geography":"USA",
+            "platform":"Nuance",
+            "usecase":"",
+            "source":""
+        },
+        {
+            "id":3,
+            "corporation":"AT&T",
+            "geography":"Australia",
+            "platform":"LIVEPERSON",
+            "usecase":"Chat",
+            "source":""
+        },
+        {
+            "id":4,
+            "corporation":"Comcast",
+            "geography":"USA",
+            "platform":"eGain",
+            "usecase":"Chat",
+            "source":""
+        }
+    ],
+    "cja":[
+        {
+            "id":1,
+            "corporation":"Marriott",
+            "platform":"LivePerson",
+            "usecase":"Marriott will use Salesforce’s Service Cloud to create a “360-degree view” of guests, as well as allowing “continuous interaction” across different messaging services, mobile apps, websites and call centres.",
+            "source":"https://www.tnooz.com/article/marriott-salesforce-crm/"
+        }
+    ]
+}

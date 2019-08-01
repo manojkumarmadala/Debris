@@ -1,0 +1,17 @@
+body{
+  background-color: #f6f8f9;
+}
+
+.pageContent{
+  margin-top: 20px;
+}
+
+/* .highcharts-container {
+  width: 100% !important;
+  height: 100% !important;
+} */
+
+.sideNavAvailable{
+   margin: 10px 0 0 10px; 
+  box-sizing: border-box;
+}

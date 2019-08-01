@@ -1,0 +1,9 @@
+{
+    "IncidentMonth": ["2018-K-June", "2018-K-July", "2018-K-August", "2018-K-September", "2018-K-October", "2018-K-November"],
+    "S1":[1,1,2,3,1,2],
+    "S2":[5,1,6,9,9,2],
+    "Product":"Chat"
+
+        
+    
+}

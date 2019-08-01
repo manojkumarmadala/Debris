@@ -1,0 +1,17 @@
+{
+    "currentEnv":"development",
+    "environments":{
+        "development":{
+            "apiServer":"http://localhost:8080",
+            "apiBasePath":"/v1"
+        },
+        "stage":{
+            "apiServer":"",
+            "apiBasePath":"/v1"
+        },
+        "production":{
+            "apiServer":"",
+            "apiBasePath":"/v1"
+        }
+    }
+}

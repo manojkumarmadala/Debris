@@ -1,0 +1,17 @@
+{
+    "currentEnv":"development",
+    "environments":{
+        "development":{
+            "dasHost":"http://host290.assist.pool.sv2.247-inc.net:8080/",
+            "elasticHost": "http://elasticsearch05.db.shared.int.sv2.247-inc.net:9200"
+        },
+        "stage":{
+            "dasHost":"",
+            "elasticHost":""
+        },
+        "production":{
+            "dasHost":"",
+            "elasticHost":""
+        }
+    }
+}

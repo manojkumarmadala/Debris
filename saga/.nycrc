@@ -1,0 +1,18 @@
+{
+  "include": [
+    "controllers",
+    "lib"
+  ],
+  "exclude": [
+  ],
+  "reporter": [
+    "text-summary",
+    "html"
+  ],
+  "skip-empty": false,
+  "check-coverage": true,
+  "statements": 65,
+  "branches": 30,
+  "functions": 60,
+  "lines": 65
+}

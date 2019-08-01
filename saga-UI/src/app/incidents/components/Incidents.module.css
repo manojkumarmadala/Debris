@@ -1,0 +1,48 @@
+.teamDropDownButton{
+    margin-bottom: 30px;
+    margin-right:10px;
+}
+.teamDropDownButton > button:first-child{
+    background-color:#ff8822;
+    border: none;
+}
+
+.teamDropDownButton > button:first-child:hover{
+    background-color: #e97c1e;
+}
+.inactive{
+        color: #204463;
+        background-color:#fff;
+        border-color: #204463;
+        font-size: 14px;
+        
+}
+.active {
+   font-size: 14px;
+
+}
+
+.filterDiv{
+    float:left;
+    background-color:#eef2f5;
+    padding:5px 10px 5px 10px;
+    margin:15px;
+
+}
+.buttonGroup{
+    padding: 0px 10px 5px 10px;
+
+}
+.button {
+    padding: 0px 10px 5px 10px;
+    background-color: #E97C1E;
+    color: #fff;
+    
+
+}
+.datePicker {
+    width:8vw;
+    margin: 0px 10px 5px 10px;
+    border: none;
+    font-size: 15px;  
+}

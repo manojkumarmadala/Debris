@@ -1,0 +1,26 @@
+.teamDropDownButton>button:first-child {
+    background-color: #ff8822;
+    border: none;
+}
+
+.teamDropDownButton{
+    display: inline-block;
+    margin-left:10px 
+}
+.teamDropDownButton>button:first-child:hover {
+    background-color: #e97c1e;
+}
+
+.link{
+    font-weight: bold;
+    }
+.more{
+  
+    color: #313f54;
+    text-align: center;
+    
+}
+.link:hover{
+    cursor: pointer;
+    color: #e97c1e;
+}

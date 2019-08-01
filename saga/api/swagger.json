@@ -1,0 +1,1110 @@
+{
+  "swagger": "2.0",
+  "consumes": ["application/json", "multipart/form-data"],
+  "produces": ["application/json"],
+  "info": {
+    "title": "fortunes",
+    "description": "An API",
+    "version": "1.0"
+  },
+  "basePath": "/v1",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "parameters": {
+      "samplefile": {
+        "name": "samplefile",
+        "description": "This is a sample file",
+        "in": "formData",
+        "required": true,
+        "type": "file"
+      },
+       "file": {
+         "name": "file",
+         "description": "This is a revenue file",
+         "in": "formData",
+         "required": true,
+         "type": "file"
+       },
+      "fortuneid": {
+        "name": "fortuneId",
+        "description": "The unique fortune identifier",
+        "in": "path",
+        "required": true,
+        "type": "string"
+      },
+      "filterId": {
+        "name": "filterId",
+        "description": "Defines the type of filter to be applied",
+        "in": "path",
+        "required": true,
+        "type": "string"
+      },
+      "text": {
+        "name": "text",
+        "description": "The fortune text",
+        "in": "formData",
+        "required": true,
+        "type": "string"
+      },
+      "author": {
+        "name": "author",
+        "description": "The fortune author",
+        "in": "formData",
+        "type": "string"
+      },
+      "sessionid": {
+          "name": "sessionid",
+          "description": "Specifies the downstream client's session UUID.",
+          "in": "formData",
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+      },
+      "sessionid_q": {
+          "name": "sessionid",
+          "description": "Specifies the downstream client's session UUID.",
+          "in": "query",
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+      },
+      "requestid": {
+          "name": "requestid",
+          "description": "Specifies the downstream client's per-request UUID.",
+          "in": "formData",
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+      },
+      "requestid_q": {
+          "name": "requestid",
+          "description": "Specifies the downstream client's per-request UUID.",
+          "in": "query",
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+      },
+      "log_string": {
+          "name": "log_string",
+          "description": "Specifies an arbitrary logging string provided by the downstream client.",
+          "in": "formData",
+          "type": "string"
+      },
+      "log_string_q": {
+          "name": "log_string",
+          "description": "Specifies an arbitrary logging string provided by the downstream client.",
+          "in": "query",
+          "type": "string"
+      },
+      "sessionid_header": {
+          "name": "X-TFS-SessionId",
+          "description": "Specifies the downstream client's session UUID.",
+          "in": "header",
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+      },
+      "requestid_header": {
+          "name": "X-TFS-RequestId",
+          "description": "Specifies the downstream client's per-request UUID.",
+          "in": "header",
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+      },
+      "log_string_header": {
+          "name": "X-TFS-LogString",
+          "description": "Specifies an arbitrary logging string provided by the downstream client.",
+          "in": "header",
+          "type": "string"
+      }
+  },
+  "responses": {
+      "BadRequest": {
+          "description": "The request was invalid. For example, the value of the initial parameter was invalid",
+          "schema": {
+              "type": "string"
+          }
+      },
+      "NotFound": {
+          "description": "The resource was not found",
+          "schema": {
+              "type": "string"
+          }
+      }
+  },
+  "paths": {
+    "/fortunes": {
+        "post": {
+            "summary": "Creates a fortune",
+            "x-swagger-router-controller": "fortunes",
+            "operationId": "makeFortune",
+            "parameters": [
+                {
+                  "$ref": "#/parameters/text"
+                },
+                {
+                  "$ref": "#/parameters/author"
+                },
+                {
+                  "$ref": "#/parameters/sessionid"
+                },
+                {
+                  "$ref": "#/parameters/requestid"
+                },
+                {
+                  "$ref": "#/parameters/log_string"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_header"
+                },
+                {
+                  "$ref": "#/parameters/requestid_header"
+                },
+                {
+                  "$ref": "#/parameters/log_string_header"
+                }
+            ],
+            "responses": {
+                "201": {
+                    "description": "The fortune was created",
+                    "schema": {
+                        "$ref": "#/definitions/FortuneCreationResponse"
+                    }
+                },
+                "400": {
+                    "$ref": "#/responses/BadRequest"
+                }
+            }
+        },
+        "get": {
+            "summary": "Retrieves a random fortune",
+            "x-swagger-router-controller": "fortunes",
+            "operationId": "getRandomFortune",
+            "consumes": [],
+            "parameters": [
+                {
+                  "name": "suffix",
+                  "description": "An optional suffix to append to the fortune text",
+                  "in": "query",
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_q"
+                },
+                {
+                  "$ref": "#/parameters/requestid_q"
+                },
+                {
+                  "$ref": "#/parameters/log_string_q"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_header"
+                },
+                {
+                  "$ref": "#/parameters/requestid_header"
+                },
+                {
+                  "$ref": "#/parameters/log_string_header"
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "The retrieved fortune",
+                    "schema": {
+                        "$ref": "#/definitions/FortuneResponse"
+                    }
+                },
+                "400": {
+                    "$ref": "#/responses/BadRequest"
+                },
+                "404": {
+                    "$ref": "#/responses/NotFound"
+                }
+            }
+        }
+    },
+    "/fortunes/{fortuneId}": {
+        "patch": {
+            "summary": "Modifies the fortune",
+            "x-swagger-router-controller": "fortunes",
+            "operationId": "updateFortuneById",
+            "consumes": ["application/json"],
+            "parameters": [
+                {
+                  "$ref": "#/parameters/fortuneid"
+                },
+                {
+                  "in": "body",
+                  "description": "the fortune data",
+                  "name": "data",
+                  "required": true,
+                  "schema": {
+                    "$ref": "#/definitions/FortuneData"
+                  }
+                },
+                {
+                  "$ref": "#/parameters/sessionid_q"
+                },
+                {
+                  "$ref": "#/parameters/requestid_q"
+                },
+                {
+                  "$ref": "#/parameters/log_string_q"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_header"
+                },
+                {
+                  "$ref": "#/parameters/requestid_header"
+                },
+                {
+                  "$ref": "#/parameters/log_string_header"
+                }
+            ],
+            "responses": {
+                "204": {
+                    "description": "The fortune was updated"
+                },
+                "400": {
+                    "$ref": "#/responses/BadRequest"
+                },
+                "404": {
+                    "$ref": "#/responses/NotFound"
+                }
+            }
+        },
+        "get": {
+            "summary": "Retrieves the identified fortune",
+            "x-swagger-router-controller": "fortunes",
+            "operationId": "getFortuneById",
+            "consumes": [],
+            "parameters": [
+                {
+                  "$ref": "#/parameters/fortuneid"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_q"
+                },
+                {
+                  "$ref": "#/parameters/requestid_q"
+                },
+                {
+                  "$ref": "#/parameters/log_string_q"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_header"
+                },
+                {
+                  "$ref": "#/parameters/requestid_header"
+                },
+                {
+                  "$ref": "#/parameters/log_string_header"
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "The fortune",
+                    "schema": {
+                        "$ref": "#/definitions/FortuneResponse"
+                    }
+                },
+                "400": {
+                    "$ref": "#/responses/BadRequest"
+                },
+                "404": {
+                    "$ref": "#/responses/NotFound"
+                }
+            }
+        },
+        "delete": {
+            "summary": "Deletes the identified fortune",
+            "x-swagger-router-controller": "fortunes",
+            "operationId": "deleteFortuneById",
+            "consumes": [],
+            "parameters": [
+                {
+                  "name": "fortuneId",
+                  "description": "The unique fortune identifier",
+                  "in": "path",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/parameters/sessionid"
+                },
+                {
+                  "$ref": "#/parameters/requestid"
+                },
+                {
+                  "$ref": "#/parameters/log_string"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_header"
+                },
+                {
+                  "$ref": "#/parameters/requestid_header"
+                },
+                {
+                  "$ref": "#/parameters/log_string_header"
+                }
+            ],
+            "responses": {
+                "204": {
+                    "description": "The fortune was deleted",
+                    "schema": {
+                        "$ref": "#/definitions/FortuneResponse"
+                    }
+                },
+                "400": {
+                    "$ref": "#/responses/BadRequest"
+                },
+                "404": {
+                    "$ref": "#/responses/NotFound"
+                }
+            }
+        }    
+      },
+      "/chatFunnel": {        
+        "get": {
+            "summary": "Returns Chat Funnel metrics",
+            "x-swagger-router-controller": "chatFunnel",
+            "operationId": "getChatFunnelMetrics",
+            "consumes": [],
+            "parameters": [                
+                {
+                  "$ref": "#/parameters/sessionid_q"
+                },
+                {
+                  "$ref": "#/parameters/requestid_q"
+                },
+                {
+                  "$ref": "#/parameters/log_string_q"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_header"
+                },
+                {
+                  "$ref": "#/parameters/requestid_header"
+                },
+                {
+                  "$ref": "#/parameters/log_string_header"
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "The retrieved fortune",
+                    "schema": {
+                        "$ref": "#/definitions/FortuneResponse"
+                    }
+                },
+                "400": {
+                    "$ref": "#/responses/BadRequest"
+                },
+                "404": {
+                    "$ref": "#/responses/NotFound"
+                }
+            }
+        }
+    },
+    "/chatFunnel/clients": {	
+      "get": {
+                "summary": "Applies the filter and retrieves data",
+                "x-swagger-router-controller": "chatFunnel",
+                "operationId": "getChatMetricsByClient",
+                "consumes": [],
+                "parameters": [                    
+                    {
+                      "$ref": "#/parameters/sessionid_q"
+                    },
+                    {
+                      "$ref": "#/parameters/requestid_q"
+                    },
+                    {
+                      "$ref": "#/parameters/log_string_q"
+                    },
+                    {
+                      "$ref": "#/parameters/sessionid_header"
+                    },
+                    {
+                      "$ref": "#/parameters/requestid_header"
+                    },
+                    {
+                      "$ref": "#/parameters/log_string_header"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "ES data"
+                    },
+                    "400": {
+                        "$ref": "#/responses/BadRequest"
+                    },
+                    "404": {
+                        "$ref": "#/responses/NotFound"
+                    }
+                }
+            }
+        },
+    "/chatFunnel/{filterId}": {	
+      "get": {
+                "summary": "Applies the filter and retrieves data",
+                "x-swagger-router-controller": "chatFunnel",
+                "operationId": "getChatMetricsByFilter",
+                "consumes": [],
+                "parameters": [
+                    {
+                      "$ref": "#/parameters/filterId"
+                    },
+                    {
+                      "$ref": "#/parameters/sessionid_q"
+                    },
+                    {
+                      "$ref": "#/parameters/requestid_q"
+                    },
+                    {
+                      "$ref": "#/parameters/log_string_q"
+                    },
+                    {
+                      "$ref": "#/parameters/sessionid_header"
+                    },
+                    {
+                      "$ref": "#/parameters/requestid_header"
+                    },
+                    {
+                      "$ref": "#/parameters/log_string_header"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "ES data"
+                    },
+                    "400": {
+                        "$ref": "#/responses/BadRequest"
+                    },
+                    "404": {
+                        "$ref": "#/responses/NotFound"
+                    }
+                }
+            }
+        },
+        "/aivaFunnel/clients": {	
+          "get": {
+                    "summary": "Applies the filter and retrieves data",
+                    "x-swagger-router-controller": "aivaFunnel",
+                    "operationId": "getAivaMetricsByClient",
+                    "consumes": [],
+                    "parameters": [                    
+                        {
+                          "$ref": "#/parameters/sessionid_q"
+                        },
+                        {
+                          "$ref": "#/parameters/requestid_q"
+                        },
+                        {
+                          "$ref": "#/parameters/log_string_q"
+                        },
+                        {
+                          "$ref": "#/parameters/sessionid_header"
+                        },
+                        {
+                          "$ref": "#/parameters/requestid_header"
+                        },
+                        {
+                          "$ref": "#/parameters/log_string_header"
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "ES data"
+                        },
+                        "400": {
+                            "$ref": "#/responses/BadRequest"
+                        },
+                        "404": {
+                            "$ref": "#/responses/NotFound"
+                        }
+                    }
+                }
+            },
+        "/agility": {	
+          "get": {
+                    "summary": "Applies the filter and retrieves data",
+                    "x-swagger-router-controller": "agility",
+                    "operationId": "getDataForTeam",
+                    "consumes": [],
+                    "parameters": [
+                        {
+                          "name": "numberOfRecords",
+                          "description": "number of records to be fetched",
+                          "in": "query",
+                          "type":"integer",
+                          "required":false
+                        },
+                        {
+                          "name": "teamId",
+                          "description": "number of records to be fetched",
+                          "in": "query",
+                          "type":"integer",
+                          "required":true
+                        },
+                        {
+                          "$ref": "#/parameters/sessionid_q"
+                        },
+                        {
+                          "$ref": "#/parameters/requestid_q"
+                        },
+                        {
+                          "$ref": "#/parameters/log_string_q"
+                        },
+                        {
+                          "$ref": "#/parameters/sessionid_header"
+                        },
+                        {
+                          "$ref": "#/parameters/requestid_header"
+                        },
+                        {
+                          "$ref": "#/parameters/log_string_header"
+                        }
+                    ],
+                    "responses": {
+                        "200": {
+                            "description": "ES data"
+                        },
+                        "400": {
+                            "$ref": "#/responses/BadRequest"
+                        },
+                        "404": {
+                            "$ref": "#/responses/NotFound"
+                        }
+                    }
+                }
+            },
+            "/incidents": {	
+              "get": {
+                        "summary": "Applies the filter and retrieves data",
+                        "x-swagger-router-controller": "incidents",
+                        "operationId": "getIncidentsData",
+                        "consumes": [],
+                        "parameters": [
+                            {
+                              "name": "product",
+                              "description": "product for which incidents data is required",
+                              "in": "query",
+                              "type":"string",
+                              "required":false
+                            },
+                            {
+                              "name": "environment",
+                              "description": "Production or Stable",
+                              "in": "query",
+                              "type":"string",
+                              "required":false
+                            },
+                            {
+                              "name": "trend",
+                              "description": "daily, weekly or montly",
+                              "in": "query",
+                              "type": "string",
+                              "required": false
+                            },
+                            {
+                              "name": "timeframe",
+                              "description": "drilldown by week or month",
+                              "in": "query",
+                              "type": "string",
+                              "required": false
+                            },
+                            {
+                              "name": "reportedBy",
+                              "description": "reported by user",
+                              "in": "query",
+                              "type":"string",
+                              "required":false
+                            },
+                            {
+                              "name": "from",
+                              "description": "from date",
+                              "in": "query",
+                              "type":"string",
+                              "required":false
+                            },
+                            {
+                              "name": "to",
+                              "description": "to date",
+                              "in": "query",
+                              "type":"string",
+                              "required":false
+                            },
+                            {
+                              "name": "severity",
+                              "description": "severity s1",
+                              "in": "query",
+                              "type":"string",
+                              "required":false
+                            },
+                            {
+                              "$ref": "#/parameters/sessionid_q"
+                            },
+                            {
+                              "$ref": "#/parameters/requestid_q"
+                            },
+                            {
+                              "$ref": "#/parameters/log_string_q"
+                            },
+                            {
+                              "$ref": "#/parameters/sessionid_header"
+                            },
+                            {
+                              "$ref": "#/parameters/requestid_header"
+                            },
+                            {
+                              "$ref": "#/parameters/log_string_header"
+                            }
+                        ],
+                        "responses": {
+                            "200": {
+                                "description": "ES data"
+                            },
+                            "400": {
+                                "$ref": "#/responses/BadRequest"
+                            },
+                            "404": {
+                                "$ref": "#/responses/NotFound"
+                            }
+                        }
+                    }
+                }, 
+            "/incidents/heatmap":  {
+              "get": {
+                "summary": "Applies the filter and retrieves data",
+                "x-swagger-router-controller": "heatmap",
+                "operationId": "getHeatmapData",
+                "consumes": [],
+                "parameters": [{
+                    "name": "product",
+                    "description": "product for which incidents data is required",
+                    "in": "query",
+                    "type": "string",
+                    "required": false
+                  },
+               
+                  {
+                    "$ref": "#/parameters/sessionid_q"
+                  },
+                  {
+                    "$ref": "#/parameters/requestid_q"
+                  },
+                  {
+                    "$ref": "#/parameters/log_string_q"
+                  },
+                  {
+                    "$ref": "#/parameters/sessionid_header"
+                  },
+                  {
+                    "$ref": "#/parameters/requestid_header"
+                  },
+                  {
+                    "$ref": "#/parameters/log_string_header"
+                  }
+                ],
+                "responses": {
+                  "200": {
+                    "description": "ES data"
+                  },
+                  "400": {
+                    "$ref": "#/responses/BadRequest"
+                  },
+                  "404": {
+                    "$ref": "#/responses/NotFound"
+                  }
+                }
+              }
+            },
+      "/test": {
+        "post": {
+            "summary": "Creates a test",
+            "consumes":["multipart/form-data"],
+            "x-swagger-router-controller": "test",
+            "operationId": "post",
+            "parameters": [
+                {
+                  "$ref": "#/parameters/samplefile"
+                }
+            ],
+            "responses": {
+                "201": {
+                    "description": "The fortune was created",
+                    "schema": {
+                        "$ref": "#/definitions/FortuneCreationResponse"
+                    }
+                },
+                "400": {
+                    "$ref": "#/responses/BadRequest"
+                }
+            }
+        },
+        "get": {
+            "summary": "Retrieves a random test",
+            "x-swagger-router-controller": "test",
+            "operationId": "get",
+            "consumes": [],
+            "parameters": [
+                {
+                  "name": "suffix",
+                  "description": "An optional suffix to append to the fortune text",
+                  "in": "query",
+                  "type": "string"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_q"
+                },
+                {
+                  "$ref": "#/parameters/requestid_q"
+                },
+                {
+                  "$ref": "#/parameters/log_string_q"
+                },
+                {
+                  "$ref": "#/parameters/sessionid_header"
+                },
+                {
+                  "$ref": "#/parameters/requestid_header"
+                },
+                {
+                  "$ref": "#/parameters/log_string_header"
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "The retrieved fortune",
+                    "schema": {
+                        "$ref": "#/definitions/FortuneResponse"
+                    }
+                },
+                "400": {
+                    "$ref": "#/responses/BadRequest"
+                },
+                "404": {
+                    "$ref": "#/responses/NotFound"
+                }
+            }
+        }
+    },
+    "/revenue":{
+      "post": {
+        "summary": "Uploads revenue data into Database",
+        "consumes": ["multipart/form-data"],
+        "x-swagger-router-controller": "revenue",
+        "operationId": "postRevenue",
+        "parameters": [{
+          "$ref": "#/parameters/file"
+        }],
+        "responses": {
+          "201": {
+            "description": "The fortune was created",
+            "schema": {
+              "$ref": "#/definitions/FortuneCreationResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          }
+        }
+      },
+      "get": {
+        "summary": "Retrieves revenue ",
+        "x-swagger-router-controller": "revenue",
+        "operationId": "getRevenue",
+        "consumes": [],
+        "parameters": [{
+            "name": "suffix",
+            "description": "An optional suffix to append to the fortune text",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name":"Month",
+            "description": "Month name of revenue data",
+            "in":"query",
+             "type": "string"
+          },
+          {
+            "name": "Year",
+            "description": "Year of revenue data",
+            "in": "query",
+            "type": "number"
+          },
+          {
+            "$ref": "#/parameters/sessionid_q"
+          },
+          {
+            "$ref": "#/parameters/requestid_q"
+          },
+          {
+            "$ref": "#/parameters/log_string_q"
+          },
+          {
+            "$ref": "#/parameters/sessionid_header"
+          },
+          {
+            "$ref": "#/parameters/requestid_header"
+          },
+          {
+            "$ref": "#/parameters/log_string_header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The retrieved fortune",
+            "schema": {
+              "$ref": "#/definitions/FortuneResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/availability": {
+        "get": {
+        "summary": "Retrieves Platform Availability ",
+        "x-swagger-router-controller": "availability",
+        "operationId": "getDataForPlatform",
+        "consumes": [],
+        "parameters": [{
+            "name": "suffix",
+            "description": "An optional suffix to append to the fortune text",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "platform",
+            "description": "platform for availability",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "monthRange",
+            "description": "month range for availability data",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "$ref": "#/parameters/sessionid_q"
+          },
+          {
+            "$ref": "#/parameters/requestid_q"
+          },
+          {
+            "$ref": "#/parameters/log_string_q"
+          },
+          {
+            "$ref": "#/parameters/sessionid_header"
+          },
+          {
+            "$ref": "#/parameters/requestid_header"
+          },
+          {
+            "$ref": "#/parameters/log_string_header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The retrieved fortune",
+            "schema": {
+              "$ref": "#/definitions/FortuneResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+      }
+    },
+        "/personweeks": {
+        "get": {
+        "summary": "gets list of jira boards for a pillar",
+        "x-swagger-router-controller": "personWeeks",
+        "operationId": "getData",
+        "consumes": [],
+        "parameters": [{
+            "name": "suffix",
+            "description": "An optional suffix to append to the fortune text",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "pillar",
+            "description": "respective pillar in org",
+            "in": "query",
+            "type": "string",
+            "required": true
+          },
+          
+          {
+            "$ref": "#/parameters/sessionid_q"
+          },
+          {
+            "$ref": "#/parameters/requestid_q"
+          },
+          {
+            "$ref": "#/parameters/log_string_q"
+          },
+          {
+            "$ref": "#/parameters/sessionid_header"
+          },
+          {
+            "$ref": "#/parameters/requestid_header"
+          },
+          {
+            "$ref": "#/parameters/log_string_header"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The retrieved fortune",
+            "schema": {
+              "$ref": "#/definitions/FortuneResponse"
+            }
+          },
+          "400": {
+            "$ref": "#/responses/BadRequest"
+          },
+          "404": {
+            "$ref": "#/responses/NotFound"
+          }
+        }
+         },
+        "post":{
+          "summary": "Uploads revenue data into Database",
+          "consumes": ["application/json"],
+          "x-swagger-router-controller": "personWeeks",
+          "operationId": "postData",
+          "parameters": [
+               {
+                  "in": "body",
+                  "name": "user",
+                  "description": "The user to create.",
+                  "schema": {
+                     "type": "object",
+                     "required": [
+                        "SprintName", "NoOfPersonWeeks", "NormalizedVelocity"
+                     ],
+                     "properties": {
+                        
+                     }
+                  }
+               }
+            ],
+          "responses": {
+            "201": {
+              "description": "The fortune was created",
+              "schema": {
+                "$ref": "#/definitions/FortuneCreationResponse"
+              }
+            },
+            "400": {
+              "$ref": "#/responses/BadRequest"
+            }
+          }
+
+         } 
+    }
+  },
+  "definitions": {
+      "FortuneCreationResponse": {
+          "description": "The fortune creation response payload",
+          "properties": {
+              "link": {
+                  "description": "A URL reference to the fortune",
+                  "type": "string"
+              }
+          }
+      },
+      "FortuneResponse": {
+        "description": "The fortune response payload",
+        "required": [
+          "id",
+          "text"
+        ],
+        "properties": {
+          "id": {
+            "description": "The unique id of the fortune",
+            "type": "string",
+            "format": "uuid"
+          },
+          "text": {
+            "description": "The fortune text",
+            "type": "string"
+          },
+          "author": {
+            "description": "The author of the fortune",
+            "$ref": "#/definitions/Author"
+          },
+          "tags": {
+            "$ref": "#/definitions/Tags"
+          }
+        }
+      },
+      "FortuneData": {
+        "required": [
+          "text"
+        ],
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "author": {
+            "$ref": "#/definitions/Author"
+          },
+          "tags": {
+            "$ref": "#/definitions/Tags"
+          }
+        }
+      },
+      "Author": {
+        "description": "An author",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      },
+      "Tags": {
+        "description": "The labels",
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Tag"
+        }
+      },
+      "Tag": {
+        "description": "A label",
+        "type": "string"
+      },
+      "ErrorResponse": {
+        "properties": {
+          "code": {
+            "description": "A status code",
+            "type": "string"
+          },
+          "reason": {
+            "description": "A descriptive message",
+            "type": "string"
+          }
+        }
+      }
+  }
+}

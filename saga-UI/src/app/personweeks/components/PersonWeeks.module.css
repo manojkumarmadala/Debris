@@ -1,0 +1,44 @@
+
+.teamDropDownButton>button:first-child {
+    background-color: #007bff;
+   
+     font-size: 14px;
+     width:97%
+}
+
+.teamDropDownButton {
+   width:100%;
+ font-size: 14px
+}
+
+.teamDropDownButton>button:first-child:hover {
+    background-color: #0069d9;
+    width:97%
+}
+.inactive {
+    color: #204463;
+    background-color: #fff;
+    border-color: #204463;
+    font-size: 14px;
+
+}
+
+.active {
+    font-size: 14px;
+
+}
+
+
+.buttonGroup {
+  display: inline-block;
+
+}
+
+.button {
+    padding: 0px 10px 5px 10px;
+    background-color: #E97C1E;
+    color: #fff;
+
+
+}
+

@@ -1,0 +1,6 @@
+{
+    "teams": ["Insights","RTDS", "PSA", "DP2"],
+    "trends":["Monthly","Weekly","Daily"],
+    "incidentsHeatMapProduct": "Insights,Unknown,Reporting 2.0,Spirit,Pulse",
+    "categories": ["Status", "Priority", "Client", "RCA"]
+}

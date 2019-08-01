@@ -1,0 +1,182 @@
+@import "../../variables.scss";
+
+.default-layout {
+  .ui.menu {
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0;
+    height: 40px;
+    padding-top: 7px;
+
+    &.stackable {
+      border: 0px;
+      background: $primary;
+      height: 40px;
+      
+
+      > {
+        .item:first-child {
+          &:after {
+            content: "";
+            position: relative;
+            left: 20px;
+            width: 1px;
+            height: 20px;
+            background: $sfc;
+          }
+        }
+      }
+
+      .right {
+        .item {
+          &.active {
+            &:before {
+              height: 0px;
+            }
+          }
+        }
+      }
+
+      .item,
+      a.item {
+        margin: 0 20px;
+        padding: 0;
+        color: #999999;
+
+        &:before {
+          width: 100%;
+          height: 0px;
+          background-color: $orange;
+          text-decoration:none;
+        }
+
+        &.active {
+          color: white;
+          background: transparent;
+          font-weight: bold;
+          border-top:5px solid $orange_org;
+ height: 5px;
+          &:before {
+            height: 3px;
+          }
+        }
+
+        &:active,
+        &:hover {
+          color: white;
+          text-decoration:none;
+        }
+
+        .logo {
+          width: 51px;
+          height: 14px;
+          margin-right: 20px;
+        }
+
+        .sub-logo {
+          color: $offwhite;
+          font-weight: bold;
+        }
+
+        .name-symbol {
+          display: inline-block;
+          position: relative;
+          width: 20px;
+          height: 20px;
+          color: $primary;
+          background: $teal;
+          text-align: center;
+          line-height: 20px;
+          &:last-child {
+            color: $lightGray;
+            font-size: 12px;
+          }
+          .name-symbol-dropdown {
+            position: absolute;
+            top: -300px;
+            right: -10px;
+            padding: 0 16px;
+            border-radius: 3px;
+            background: white;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+
+            &.in {
+              top: 30px;
+            }
+
+            &:before {
+              content: "";
+              position: absolute;
+              top: -10px;
+              right: 15px;
+              border: 5px solid transparent;
+              border-bottom-color: white;
+            }
+
+            ul {
+              margin: 0px;
+              padding: 0px;
+              text-align: left;
+              white-space: nowrap;
+
+              li {
+                padding: 0.75rem 0;
+                border-bottom: 1px solid $sfc;
+                list-style: none;
+                color: $black;
+                font-size: 14px;
+                font-weight: normal;
+                &:last-child {
+                  border-bottom: 0px;
+                }
+
+                .logged-in-user-card {
+                  display: flex;
+
+                  .user-initial {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    color: white;
+                    background: $darkgrey;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    line-height: 30px;
+                  }
+
+                  .user-details {
+                    display: flex;
+                    margin-right: 10px;
+                    font-size: 0.8rem;
+                    flex: 4;
+                    flex-direction: column;
+                    line-height: 1.2rem;
+
+                    span {
+                      color: $darkgrey;
+                      &:first-child {
+                        color: black;
+                        font-weight: bold;
+                        font-size: 14px;
+                      }
+                    }
+                  }
+
+                  .status-icon {
+                    color: $teal;
+                    font-size: 0.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .green-menu-item {
+      color: white;
+      background: $green;
+    }
+  }
+}

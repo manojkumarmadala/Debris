@@ -1,0 +1,12 @@
+.teamDropDownButton > button:first-child{
+    background-color:#ff8822;
+    border: none;
+}
+
+.teamDropDownButton > button:first-child:hover{
+    background-color: #e97c1e;
+}
+
+.teamDropDownButton{
+    margin-bottom: 20px;
+}

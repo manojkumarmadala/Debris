@@ -1,0 +1,18 @@
+.Table{
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 1rem;
+    background: #ffffff;
+}
+.Table>th{
+font-size: 20px;
+}
+.tablecontainer{
+padding: 0px 0px 0px 25px;
+}
+
+.graph {
+    border: 1px solid #000;    
+}
+
+.bar { fill: #f7941d; }

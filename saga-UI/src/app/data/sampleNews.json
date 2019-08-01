@@ -1,0 +1,163 @@
+[
+    {
+        "id":1,
+        "date":"May 2nd, 2018",
+        "headder":"LivePerson",
+        "article":"LivePerson acquired Conversable, which brings AI, social listening and outbound messaging campaign management capabilities to its platform",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":2,
+        "date":"May 2nd, 2018",
+        "headder":"LivePerson",
+        "article":"LivePerson launched another wave of brands on Apple Business Chat beta, including: Burberry®, KDDI, Vodafone Germany, buddybank, Telstra, Harvey Norman, NH Hotels. The first wave included Aramark, Discover, Lowe's, The Home Depot, T-Mobile.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":3,
+        "date":"May 2nd, 2018",
+        "headder":"LivePerson",
+        "article":"LivePerson acquired AdvantageTec, a provider of texting solutions for automotive dealerships.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":4,
+        "date":"May 2nd, 2018",
+        "headder":"Nuance",
+        "article":"Appointed 4 new members to its Board. Lloyd Carney, former CEO at Brocade Communications, joins as Nuance's Chairman of the Board.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":5,
+        "date":"May 2nd, 2018",
+        "headder":"Nuance",
+        "article":"Announced its Prediction Service, which is basically a capability to predict intent.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":6,
+        "date":"May 2nd, 2018",
+        "headder":"Nuance",
+        "article":"Nuance Lloyds Banking Group deploys Nuance voice biometrics.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":7,
+        "date":"May 2nd, 2018",
+        "headder":"Google",
+        "article":"Google acquired Onward (a bot builder tool), which will now give Dialogflow the capability to automate workflows from unstructured data (similar to our Unsupervised Flow Discovery Tool), and also has an integration with Salesforce.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":8,
+        "date":"May 2nd, 2018",
+        "headder":"Google",
+        "article":"Google is open-sourcing Active Question Answering (ActiveQA), a research project that investigates the use of reinforcement learning to train AI agents for question answering.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":9,
+        "date":"May 2nd, 2018",
+        "headder":"IBM",
+        "article":"Vodafone's chatbot TOBi, powered by LivePerson and IBM Watson, is boasting of doubling conversion rates when compared to its website.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":10,
+        "date":"May 2nd, 2018",
+        "headder":"IBM",
+        "article":"IBM launched Watson Ads Omni (for intelligent, interactive ads), Media Optimizer (competes with us on Search Bidding) and Predictive Audiences. PM Puneet Mahajan's comments: IBM is trying to create a programmatic ad ecosystem around its Watson. This is similar to the industry tactics as seen for Adobe, Marketo, Oracle and others, except that they are trying to keep Watson as the core proposition",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":11,
+        "date":"May 2nd, 2018",
+        "headder":"IPsoft",
+        "article":"18 month old Credit Suisse bot by IPsoft yields results: Here, the Director of Digital & Cognitive Services talks what went into deploying the bot. Amelia is being used for an internal service desk.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":12,
+        "date":"May 2nd, 2018",
+        "headder":"Avaya",
+        "article":"Launched a platform that enables chatbots from different enterprises and industries to collaborate.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":13,
+        "date":"May 2nd, 2018",
+        "headder":"Avaya",
+        "article":"Has invested in Cogito, an AI platform which provides conversational insights and analytics. They both will work together to integrate Cogito’s AI with Avaya’s contact centre solutions.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":14,
+        "date":"May 2nd, 2018",
+        "headder":"Avaya",
+        "article":"Has integrated biometrics, real-time sentiment analysis, and other AI-enhanced technologies into its voice communication platform",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":15,
+        "date":"May 2nd, 2018",
+        "headder":"ServiceNow",
+        "article":"ServiceNow will partner with NTT Communications to open two new cloud services data centers in Tokyo and Osaka to serve Japanese customers.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":16,
+        "date":"May 2nd, 2018",
+        "headder":"ServiceNow",
+        "article":"ServiceNow announced an alliance with Microsoft to deliver ServiceNow digital workflows through the Azure Government Cloud.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":17,
+        "date":"May 2nd, 2018",
+        "headder":"Other Competitors",
+        "article":"AdLingo is a Google-incubated startup which builds conversational display ads. It has integrated with Dialog Flow, Microsoftbot Framework, LivePerson and Blip, among others.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":18,
+        "date":"May 2nd, 2018",
+        "headder":"Other Competitors",
+        "article":"BNY Mellon introduced chatbot Selina to handle institutional clients’ trading queries.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":19,
+        "date":"May 2nd, 2018",
+        "headder":"Other Competitors",
+        "article":"Swedish startup Artificial Solutions has raised €13.6 million in funding to further develop its Teneo platform. Renault Italy is selling a limited edition of its latest Captur SUV through a chatbot on Facebook Messenger.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":20,
+        "date":"May 2nd, 2018",
+        "headder":"Other Competitors",
+        "article":"Intercom has launched an AI-powered FAQ bot.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":21,
+        "date":"May 2nd, 2018",
+        "headder":"Other Competitors",
+        "article":"Altitude Software will embed eGain AI and Knowledge Management into its Xperience Suite.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":22,
+        "date":"May 2nd, 2018",
+        "headder":"Other Competitors",
+        "article":"Active.Ai, a conversational AI platform provider for financial services companies (FSIs), has chosen Amazon Web Services (AWS) as a cloud provider.",
+        "image":"./images/sample-image.png"
+    },
+    {
+        "id":23,
+        "date":"May 2nd, 2018",
+        "headder":"Other Competitors",
+        "article":"DigitalGenius is using a language-agnostic approach to its AI & ML.",
+        "image":"./images/sample-image.png"
+    }
+]

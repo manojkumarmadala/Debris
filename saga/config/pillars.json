@@ -1,0 +1,300 @@
+{
+	"pillars":[
+		{
+			"name":"ACS",
+			"id":"1",
+			"teams":[
+				{
+					"name":"Chat Team 1",
+					"id":"1",
+					"boards":[
+						{
+							"name":"CC",
+							"id":"1",
+							"regexForBoard":"CC*",
+							"regexForSprints": {"match_phrase": { "SprintName" : "CC1*" }}
+						}
+					]
+				},
+				{
+					"name":"Chat Team 2",
+					"id":"2",
+					"boards":[
+						{
+							"name":"CC",
+							"id":"2",
+							"regexForBoard":"CC*",
+							"regexForSprints": {"match_phrase": { "SprintName" : "CC2*" }}
+						}
+					]
+				},
+				{
+					"name":"Chat Team 3",
+					"id":"3",
+					"boards":[
+						{
+							"name":"CC",
+							"id":"3",
+							"regexForBoard":"CC*",
+							"regexForSprints": {"match_phrase": { "SprintName" : "CC3*" }}
+						}
+					]
+				},
+				{
+					"name":"ACS Client Commit",
+					"id":"4",
+					"boards":[
+						{
+							"name":"CC",
+							"id":"4",
+							"regexForBoard":"CC*",
+							"regexForSprints": {"match_phrase": { "SprintName" : "ACSCC*" }}
+						}
+					]
+				},
+				{
+					"name": "Assisted Initiatives",
+					"id": "5",
+					"boards": [{
+						"name": "AI",
+						"id": "5",
+						"regexForBoard": "AI",
+						"regexForSprints": {"match_phrase": { "SprintName" : "AI*" }}
+					}]
+				},
+				{
+					"name": "Assist Ops",
+					"id": "6",
+					"boards": [{
+						"name": "Ops",
+						"id": "6",
+						"regexForBoard": "Assist",
+						"regexForSprints": {"regexp": { "SprintName" : ".*" }}
+					}]
+				},
+				{
+					"name": "Central",
+					"id": "7",
+					"boards": [{
+						"name": "Central",
+						"id": "7",
+						"regexForBoard": "Central*",
+						"regexForSprints": {"regexp": { "SprintName" : ".*" }}
+					}]
+				},
+				{
+					"name": "Active Share",
+					"id": "8",
+					"boards": [{
+						"name": "Active",
+						"id": "8",
+						"regexForBoard": "Active",
+						"regexForSprints": {"regexp": { "SprintName" : ".*" }}
+					}]
+				}
+			]
+		},
+		{
+			"name": "AI",
+			"id": "2",
+			"teams": [{
+				"name": "SpeechPlatformCentral",
+				"id": "9",
+				"boards": [{
+					"name": "SpeechPlatformCentral",
+					"id": "9",
+					"regexForBoard": "*Platform",
+					"regexForSprints": {
+						"regexp": {
+							"SprintName": ".*"
+						}
+					}
+				}]
+			},
+		{
+			"name": "SpeechAnalytics",
+			"id": "10",
+			"boards": [{
+				"name": "SpeechAnalytics",
+				"id": "10",
+				"regexForBoard": "*Analytics",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "VividSpeech",
+			"id": "11",
+			"boards": [{
+				"name": "VividSpeech",
+				"id": "11",
+				"regexForBoard": "SG",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "SpeechPods",
+			"id": "12",
+			"boards": [{
+				"name": "SpeechPods",
+				"id": "12",
+				"regexForBoard": "SPD",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "SpeechWeb",
+			"id": "13",
+			"boards": [{
+				"name": "SpeechWeb",
+				"id": "13",
+				"regexForBoard": "SWS",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "AivaVPA",
+			"id": "14",
+			"boards": [{
+				"name": "AivaVPA",
+				"id": "14",
+				"regexForBoard": "VPAS",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "Mobile",
+			"id": "15",
+			"boards": [{
+				"name": "Mobile",
+				"id": "15",
+				"regexForBoard": "Mobile",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "Mobile",
+			"id": "16",
+			"boards": [{
+				"name": "Mobile",
+				"id": "16",
+				"regexForBoard": "Mobile",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "UDE",
+			"id": "17",
+			"boards": [{
+				"name": "UDE",
+				"id": "17",
+				"regexForBoard": "UDE",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "SpectrumVA",
+			"id": "18",
+			"boards": [{
+				"name": "SpectrumVA",
+				"id": "18",
+				"regexForBoard": "UVS",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "GoldVA",
+			"id": "19",
+			"boards": [{
+				"name": "GoldVA",
+				"id": "19",
+				"regexForBoard": "UVG",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "LogExplorer",
+			"id": "20",
+			"boards": [{
+				"name": "LogExplorer",
+				"id": "20",
+				"regexForBoard": "*viewer",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "AIVATools",
+			"id": "21",
+			"boards": [{
+				"name": "AIVATools",
+				"id": "21",
+				"regexForBoard": "AT",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}, {
+			"name": "NLTools",
+			"id": "22",
+			"boards": [{
+				"name": "NLTools",
+				"id": "22",
+				"regexForBoard": "NT",
+				"regexForSprints": {
+					"regexp": {
+						"SprintName": ".*"
+					}
+				}
+			}]
+		}]
+		},
+		{
+			"name": "DataAnalytics",
+			"id": "3",
+			"teams": [{
+				"name": "Chat Team 1",
+				"id": "23",
+				"boards": [{
+					"name": "CC",
+					"id": "23",
+					"regexForBoard": "CC*",
+					"regexForSprints": "CC1*"
+				}]
+			}]
+		}
+	]
+}
